@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: "poppins" sans-serif;
+} 
+/* body{
+   
+} */
+
+.main{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c38a2d52-138e-48a3-ab68-36787ece46b3/eeb03fc9-99c6-438e-824d-32917ce55783/IN-en-20240101-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+    position: relative;
+    background-position: center center;
+    background-size: max(1000px,100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+main.box{ 
+    height: 100vh;
+    width: 100%;
+    opacity: 0.44;
+    position: absolute;
+    background-color: black;
+    top: 0%; 
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 60vw;
+    margin: auto;
+    height: 80px;
+}
+nav img{
+    width: 135px;
+    color: red;
+    position: relative;
+    z-index: 15;
+}
+nav.btn{
+    position: relative;
+    z-index: 15;
+    border: none;
+    outline: none;
+
+}
+
+.text{
+    height: calc(100%-80px);
+    display: flex;
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    gap: 15px;
+    padding: 0% 20px;
+    
+    
+}
+.text:nth-child(1){
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+}
+.text:nth-child(2){
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+}
+.text:nth-child(3){
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+.line{
+    height: 5px;
+    background-color: dimgray;
+    z-index: 10;
+}
+.btn{
+    padding: 3px 20px;
+    font-weight: bold;
+}
+.sign{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+   
+}
+.btn-red{
+    background-color: red;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    padding: 3px 24px;
+}
+.main input{
+    font-size: 10px;
+    border-radius: 4px;
+    padding: 3px 24px;
+    background-color: rgba(228, 220, 220, 0.2);
+}
+.text1{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.img1{
+    width: 30vw;
+
+}
+.img2{
+    width: 30vw;
+}

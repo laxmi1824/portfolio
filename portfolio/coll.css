@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+input{
+    display: none;
+}
+.container{
+    width: 100%;
+    text-align: center;
+}
+h1{
+    font-weight: normal;
+    font-size: 35px;
+    position: relative;
+    margin: 40px 0;
+}
+h1::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background-color: crimson;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        width: 100px;
+    }
+    50%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
+.top-content{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+h3{
+    height: 100%;
+    background-color: lightgray;
+    line-height: 60px;
+    padding: 0 50px;
+    color: white;
+}
+label{
+    display: inline-block;
+    height: 100%;
+    padding: 0 10px;
+    margin: 0 50px;
+    line-height: 60px;
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+    transition: color .5s;
+}
+label:hover{
+    color: black;
+}
+
+.photo-gallery{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     padding: 30px 20px;
+     column-gap: 20px;
+     row-gap: 30px;
+     position: relative;
+
+}
+.pic img{
+    width: 100%;
+    height: 300px;
+    display: block;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 1s;
+    border: 2px solid #ff3d0036;
+    border-radius: 13px;
+    box-shadow: 4px 7px 7px 0px lightgray;
+    transition: .5s;
+}
+.pic::before{
+    content: "photo gallery";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    width: 100%;
+    margin-top: -100px;
+    opacity: 0;
+    transition:  0.3s;
+    transition-delay: .2s;
+    z-index: 1;
+   
+}
+.pic::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+    height: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: .3s;
+}
+.pic img:hover::after{
+    height: 100%;
+}
+
+.pic img:hover::before{
+    margin-top: 0;
+    opacity: 1;
+}
+#check1:checked ~ .container .photo-gallery .pic {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#check2:checked ~ .container .photo-gallery .pic {
+    display: none;
+}
+#check2:checked ~ .container .photo-gallery .nature {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#check3:checked ~ .container .photo-gallery .pic {
+    display: none;
+}
+#check3:checked ~ .container .photo-gallery .travel {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#check4:checked ~ .container .photo-gallery .pic {
+    display: none;
+}
+#check4:checked ~ .container .photo-gallery .animals {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#check5:checked ~ .container .photo-gallery .pic {
+    display: none;
+}
+#check5:checked ~ .container .photo-gallery .food {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}
+
+#check6:checked ~ .container .photo-gallery .pic {
+    display: none;
+}
+#check6:checked ~ .container .photo-gallery .festival {
+    display: block;
+    opacity: 1;
+    transform: scale(1);
+}

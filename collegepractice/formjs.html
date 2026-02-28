@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Event Demo</title>
+</head>
+<body>
+
+<h2>Keyboard Events Form</h2>
+
+<label for="inputBox">Type here:</label>
+<input type="text" id="inputBox" 
+       onkeydown="showKeyDown(event)" 
+       onkeyup="showKeyUp(event)" 
+       onkeypress="showKeyPress(event)">
+
+<p id="eventOutput"></p>
+
+<!-- Buttons for alert, confirm, prompt -->
+<button onclick="showAlert()">Alert</button>
+<button onclick="showConfirm()">Confirm</button>
+<button onclick="showPrompt()">Prompt</button>
+
+<script>
+  function showKeyDown(e) {
+    document.getElementById("eventOutput").innerText = "Key Down: " + e.key;
+  }
+
+  function showKeyUp(e) {
+    document.getElementById("eventOutput").innerText = "Key Up: " + e.key;
+  }
+
+  function showKeyPress(e) {
+    document.getElementById("eventOutput").innerText = "Key Pressed: " + e.key;
+  }
+
+  function showAlert() {
+    alert("This is an alert box!");
+  }
+
+  function showConfirm() {
+    let result = confirm("Do you want to continue?");
+    document.getElementById("eventOutput").innerText = result ? "Confirmed" : "Cancelled";
+  }
+
+  function showPrompt() {
+    let name = prompt("Enter your name:");
+    document.getElementById("eventOutput").innerText = name ? "Hello, " + name : "No input";
+  }
+</script>
+
+</body>
+</html>
+</body>
+</html>

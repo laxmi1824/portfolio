@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        table{
+            text-align: center;
+            border: 1px solid black;
+            border-collapse: collapse;
+            font-family: cursive;
+        }
+        th,tr,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <!--this a headings-->
+    <h1>heading 1</h1>
+    <h2>heading2</h2>
+    <h3>heading 3</h3>
+    <h4>heading4</h4>
+    <h5>heading5</h5>
+    <h6>heading6</h6>
+    <!--this a para-->
+    <p>this is a paragraph</p>
+    <!--hr is horizontal line-->
+    <hr>
+    <!--sup use to physics formula-->
+    <p>theory of relativity e=mc<sup>2</sup></p><br>
+    <!--br use to break-->
+    <!--strong use for bold text and em use for italic text-->
+    <p>this is <strong>important</strong> and <em>emphasized</em> </p>
+    <!--u use for underline and s use for text katne ke liye -->
+    <p>this is <u>underline</u> and <s>strikethrough</s></p>
+    <!--sub chemical reaction or maths-->
+    <p>the water h<sub>2</sub>o</p>
+
+     <!--pre tag use for text space-->
+    <pre>
+        to 
+        the principle
+    </pre>
+    <!--kbd computer keys ko likhne ke liye -->
+    <p>to save a file, press <kbd>ctrl</kbd> + <kbd>s</kbd></p>
+    <!--abbr tag spelling kii full form dekhane ke liye -->
+    <p><abbr title="world health organization">WHO</abbr>is an international organization.</p>
+    <!--mark tag text ko highlight-->
+    <p>highlight <mark>this text</mark>to emphasize it.</p>
+    <!--small tag text ko small dekhane ke liye-->
+    <p>this is a <small>smaller font size</small>text</p>
+    <!--del tag text ko delete krne ki liye -->
+    <p>my favorite color is <del>green</del> red</p>
+    <hr>
+    <!--inline style-->
+    <p style="color:brown">
+        inline style is one of the way to style html content
+    </p>
+    <!--achor tag link ke liye or title link pe click krne ke baad option ke liye-->
+    <a href="https://www.google.com/search?q=google+link&rlz=1C1VDKB_enIN1015IN1015&oq=goo&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg5MgYIARBFGEAyBggCEEUYOzIHCAMQABiPAjIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINzI0NmowajeoAgiwAgE&sourceid=chrome&ie=UTF-8"
+        target="_blank"
+        title="click now to subs"
+    >
+        goole
+    </a>
+    <!--download tag-->
+    <a href="./ani.jpg" download> download file </a>
+    <!--mailto tag mail ke liye-->
+    <a href="mailto:thapa@technical.com">send email to thapa</a><br>
+    <!--tel tag like whatsapp open ke liye--> 
+    <a href="tel: 917310724770">call us</a>
+    <img src="./downloads/website/leaves.jpg" alt="image">
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>username</th>
+                <th>password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>vinod</td>
+                <td>123</td>
+            </tr>
+            <tr>
+                <td>vinod</td>
+                <td>123</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">count:2</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">timetable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">hours</td>
+                <td>mon</td>
+                <td>mon</td>
+                <td>mon</td>
+                <td>mon</td>
+                <td>mon</td>
+                <td>mon</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+            </tr>
+            <tr>
+                <td colspan="6">lunch</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td rowspan="2">games</td>
+            </tr>
+            <tr>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+                <td>math</td>
+              
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <audio controls>
+        <source src="" type="">
+    </audio><br>
+    <video controls muted autoplay poster="image">
+        <source src="" type="">
+
+    </video>
+    <br>
+    <form>
+        <h1>html form</h1>
+        <div>
+            <label for="username">username</label>
+            <input type="text" id="username">
+        </div>
+        <div>
+            <label for="email">enter your email</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="textarea">message</label>
+           <textarea name="text" id="textarea" cols="30" rows="10" placeholder="text"></textarea>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <label for="number">mobile number</label>
+            <input type="number" id="number" max="8" min="5">
+        </div>
+        <div>
+            <label for="gender">gender</label>
+            <input type="radio" name="gender" value="male"> male
+            <input type="radio" name="gender" value="female"> female
+        </div>
+        <div>
+            <label for="hobbies">hobbies</label>
+            <input type="checkbox" name="interest" value="music"> music
+            <input type="checkbox" name="interest" value="sports"> sports
+        </div>
+        <div>
+            <label for="country">fav country</label>
+            <select type="country" id="country">
+            <option value="usa">Usa</option>
+            <option value="canada">canada</option>
+            <option value="noida">noida</option>
+        </div>
+        <div>
+            <label for="country">select a country</label>
+            <input type="text" id="country" name="country" list="countries">
+            <datalist id="countries">
+                <option value="usa"></option>
+                <option value="canada"></option>
+                <option value="noida"></option>
+                <option value="uk"></option>
+                <option value="nepal"></option>
+            </datalist>
+        </div>
+        <div>
+            <label for="file">select file</label>
+            <input type="file" name="fileupload"/++++++>
+        </div>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
